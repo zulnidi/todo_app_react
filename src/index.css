@@ -1,10 +1,9 @@
-/* Fuentes opcionales: puedes importarlas en index.html o usar el fallback */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root{
   --bg: #f3f4f4;
   --card: rgba(255,255,255,0.7);
-  --accent: #0fa08f; /* teal/verde para el subtítulo */
+  --accent: #0fa08f; 
   --text-dark: #263238;
   --muted: #9aa5a5;
 }
@@ -43,11 +42,11 @@ body{
 .title{
   font-size: 48px;
   font-weight: 700;
-  color: #2c3e50; /* oscuro */
+  color: #2c3e50; 
   margin-bottom: 18px;
 }
 
-/* subtítulo verde/teal */
+/* subtítulo verde*/
 .subtitle{
   font-size: 32px;
   color: var(--accent);
@@ -82,16 +81,9 @@ body{
   color: #162022;
 }
 
-/* Hacer que la tarjeta tenga un sutil borde o rayita si quieres */
 .todo-item span{
   display: inline-block;
   vertical-align: middle;
 }
 
-/* Responsive: ajustar tamaños en pantallas pequeñas */
-@media (max-width: 600px){
-  .title{ font-size: 32px; }
-  .subtitle{ font-size: 22px; }
-  .todo-list{ width: 90%; }
-  .todo-item{ font-size: 16px; padding: 12px; }
-}
+
