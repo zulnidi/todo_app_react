@@ -1,0 +1,97 @@
+/* Fuentes opcionales: puedes importarlas en index.html o usar el fallback */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+  --bg: #f3f4f4;
+  --card: rgba(255,255,255,0.7);
+  --accent: #0fa08f; /* teal/verde para el subtítulo */
+  --text-dark: #263238;
+  --muted: #9aa5a5;
+}
+
+*{ box-sizing: border-box; margin:0; padding:0; }
+
+html,body,#root{
+  height:100%;
+}
+
+body{
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text-dark);
+  -webkit-font-smoothing:antialiased;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Contenedor central */
+.page{
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Hero (título grande) */
+.hero{
+  background: transparent;
+  padding-bottom: 24px;
+}
+
+.title{
+  font-size: 48px;
+  font-weight: 700;
+  color: #2c3e50; /* oscuro */
+  margin-bottom: 18px;
+}
+
+/* subtítulo verde/teal */
+.subtitle{
+  font-size: 32px;
+  color: var(--accent);
+  margin: 10px 0 28px 0;
+  font-weight: 600;
+}
+
+/* Contenido centrado con la lista */
+.content{
+  display: flex;
+  justify-content: center;
+}
+
+/* Lista de tareas estilo tarjeta */
+.todo-list{
+  list-style: none;
+  width: 60%;
+  min-width: 260px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item{
+  background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(245,250,250,0.7));
+  border-radius: 6px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.03) inset;
+  font-size: 18px;
+  font-weight: 500;
+  color: #162022;
+}
+
+/* Hacer que la tarjeta tenga un sutil borde o rayita si quieres */
+.todo-item span{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Responsive: ajustar tamaños en pantallas pequeñas */
+@media (max-width: 600px){
+  .title{ font-size: 32px; }
+  .subtitle{ font-size: 22px; }
+  .todo-list{ width: 90%; }
+  .todo-item{ font-size: 16px; padding: 12px; }
+}
